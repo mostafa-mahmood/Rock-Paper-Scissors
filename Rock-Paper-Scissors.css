@@ -96,8 +96,7 @@
           transition: transform 0.5s ease;
         }
         
-        .options-section i:hover,
-        .options-section i:active {
+        .options-section i:hover{
           color: white;
           background-color: #3b31f2ca;
           cursor: pointer;
@@ -153,8 +152,7 @@
           transition: transform 0.5s ease;
         }
         
-        .try button:hover,
-        .try button:active {
+        .try button:hover{
           color: #000000;
           background-color: #747ea8;
           cursor: pointer;
@@ -249,7 +247,7 @@
 
           .try p{
                     font-size: 40px;
-                    color: rgb(219, 222, 24);
+                    color: rgb(144, 146, 33);
                     margin: 0;
                     padding: 0;
                     box-shadow: #0d1122;
@@ -260,6 +258,18 @@
                     margin: 0;
                     font-size: 26px;
                     width: 150px;
+          }
+          .try button:active {
+                    color: #000000;
+                    background-color: #747ea8;
+                    cursor: pointer;
+                    transform: scale(1.1);
+          }
+          .options-section i:active {
+            color: white;
+            background-color: #3b31f2ca;
+            cursor: pointer;
+            transform: scale(1.2);
           }
         }
         
