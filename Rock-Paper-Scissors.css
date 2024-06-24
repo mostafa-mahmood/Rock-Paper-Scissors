@@ -96,7 +96,8 @@
           transition: transform 0.5s ease;
         }
         
-        .options-section i:hover{
+        .options-section i:hover,
+        .options-section i:active {
           color: white;
           background-color: #3b31f2ca;
           cursor: pointer;
@@ -266,10 +267,10 @@
                     transform: scale(1.1);
           }
           .options-section i:active {
-            color: white;
-            background-color: #3b31f2ca;
-            cursor: pointer;
-            transform: scale(1.2);
+                    color: white;
+                    background-color: #3b31f2ca;
+                    cursor: pointer;
+                    transform: scale(1.2);
           }
         }
         
