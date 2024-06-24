@@ -1,10 +1,10 @@
-*{
+* {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-}
-
-body{
+        }
+        
+        body {
           background-color: #172041;
           display: flex;
           flex-direction: column;
@@ -13,11 +13,12 @@ body{
           font-family: "Barlow Semi Condensed", sans-serif;
           font-weight: 700;
           font-style: normal;
-}
-
-header{
+          padding: 10px;
+        }
+        
+        header {
           color: white;
-          border: solid hsl(0,0%,50%);
+          border: solid hsl(0, 0%, 50%);
           border-radius: 15px;
           width: 60%;
           height: 170px;
@@ -25,58 +26,63 @@ header{
           align-items: center;
           justify-content: space-between;
           margin-top: 50px;
-}
-
-.title , .score{
+        }
+        
+        .title,
+        .score {
           padding: 35px;
-}
-
-.title{
+        }
+        
+        .title {
           width: 30%;
           height: 90%;
           font-size: 40px;
           display: flex;
           justify-content: flex-start;
           align-items: center;
-}
-
-.score{
+        }
+        
+        .score {
           width: 40%;
           height: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
-}
-
-.player-score , .computer-score{
-          color: hsl(0,0%,28%);
+        }
+        
+        .player-score,
+        .computer-score {
+          color: hsl(0, 0%, 28%);
           background-color: white;
           display: flex;
-          flex-direction:column;
+          flex-direction: column;
           justify-content: space-between;
-          align-items:center;
+          align-items: center;
           height: 115px;
           width: 135px;
           border-radius: 12px;
           padding: 20px 0;
-}
-
-#player-score, #computer-score{
+        }
+        
+        #player-score,
+        #computer-score {
           font-size: 60px;
           font-weight: 700;
-}
-
-.options-section , .result-section{
+        }
+        
+        .options-section,
+        .result-section {
           width: 100%;
           height: 400px;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
-}
-
-.options-section i , .result-section i{
+        }
+        
+        .options-section i,
+        .result-section i {
           font-size: 100px;
-          color: hsl(0,0%,22%);
+          color: hsl(0, 0%, 22%);
           background-color: white;
           border-radius: 100px;
           border-width: 15px;
@@ -88,47 +94,51 @@ header{
           justify-content: center;
           align-items: center;
           transition: transform 0.5s ease;
-}
-.options-section i:hover{
+        }
+        
+        .options-section i:hover {
           color: white;
           background-color: #3b31f2ca;
           cursor: pointer;
           transform: scale(1.2);
-}
-
-.yc , .cc{
+        }
+        
+        .yc,
+        .cc {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-}
-
-.yc p, .cc p{
-          color:white;
-          margin-bottom:50px;
+        }
+        
+        .yc p,
+        .cc p {
+          color: white;
+          margin-bottom: 50px;
           font-size: 50px;
-}
-
-.try{
+        }
+        
+        .try {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           width: 400px;
           height: 700px;
-}
-
-.try button , .try p{
+        }
+        
+        .try button,
+        .try p {
           margin-top: 200px;
           margin-left: 100px;
-}
-
-.try p{
+        }
+        
+        .try p {
           font-size: 70px;
           color: white;
-}
-
-.try button{
+        }
+        
+        .try button {
           width: 200px;
           height: 90px;
           border: none;
@@ -140,11 +150,88 @@ header{
           background-color: #0d1122;
           border-radius: 10px;
           transition: transform 0.5s ease;
-}
-
-.try button:hover{
+        }
+        
+        .try button:hover {
           color: #000000;
           background-color: #747ea8;
           cursor: pointer;
           transform: scale(1.1);
-}
+        }
+        
+        /* Media Queries */
+        @media (max-width: 600px) {
+          header {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            margin-top: 20px;
+          }
+        
+          .title {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+          }
+        
+          .score {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+          }
+        
+          .player-score,
+          .computer-score {
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            font-size: 30px;
+          }
+        
+          #player-score,
+          #computer-score {
+            font-size: 40px;
+          }
+        
+          .options-section,
+          .result-section {
+            flex-direction: column;
+            height: auto;
+            margin-top: 20px;
+          }
+        
+          .options-section i,
+          .result-section i {
+            font-size: 70px;
+            height: 120px;
+            width: 120px;
+            margin: 10px 0;
+          }
+        
+          .yc p,
+          .cc p {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+        
+          .try {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+          }
+        
+          .try p {
+            font-size: 40px;
+            margin: 20px 0;
+          }
+        
+          .try button {
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+          }
+        }
+        
