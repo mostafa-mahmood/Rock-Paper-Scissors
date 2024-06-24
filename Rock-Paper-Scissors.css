@@ -163,6 +163,9 @@
         
         /* Media Queries */
         @media (max-width: 700px) {
+          body{
+                    max-height: 900px;
+          }
           header {
             flex-direction: column;
             width: 100%;
@@ -245,7 +248,8 @@
           }
 
           .try p{
-                    font-size: 50px;
+                    font-size: 40px;
+                    color: rgb(219, 222, 24);
                     margin: 0;
                     padding: 0;
                     box-shadow: #0d1122;
